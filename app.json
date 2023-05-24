@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "SIAP EMP",
+    "slug": "emp-siap",
+    "version": "1.1.0",
+    "icon": "./assets/icon.png",
+    "description": "Intranet App PT.Energi Mega Persada",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "notification": {
+      "icon": "./assets/icon.png"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/c2ae13ce-d518-4267-81cb-c6e4fe2166ed"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.emp.id.siap",
+      "buildNumber": "5",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "remote-notification",
+          "fetch"
+        ],
+        "NSCameraUsageDescription": "We use your camera to take a picture that will be used for your profile photo"
+      },
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#212427"
+      },
+      "package": "com.empsiap",
+      "versionCode": 1,
+      "runtimeVersion": "1.0.0"
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "sounds": [
+            "./assets/notification-sound.wav",
+            "./assets/notification-sound-other.wav"
+          ],
+          "mode": "production",
+          "androidMode": "default",
+          "iosDisplayInForeground": true
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c2ae13ce-d518-4267-81cb-c6e4fe2166ed"
+      }
+    }
+  }
+}
