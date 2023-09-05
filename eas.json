@@ -14,5 +14,12 @@
       "developmentClient": true
     },
     "production": {}
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "track": "internal"
+      }
+    }
   }
 }

@@ -57,9 +57,9 @@ export default function App() {
   const [page, setPage] = useState('');
   const notificationListener = useRef();
   const responseListener = useRef();
-  const domain = 'http://172.25.1.82/emp/public/login';
+  const domain = 'https://intra21.emp.id/login';
   // const domain = 'http://5518-111-95-220-21.ngrok.io/login'; //for testing
-  const [currentUrl, setCurrentUrl] = useState(domain+'?extend=http://172.25.1.82/emp/public/');
+  const [currentUrl, setCurrentUrl] = useState(domain+'?extend=https://intra21.emp.id');
   // const [currentUrl, setCurrentUrl] = useState(domain+'?extend=http://e057-139-192-108-91.ngrok.io');
   var idUser = `
   document.getElementById('expotoken').value = '${expoPushToken}';
